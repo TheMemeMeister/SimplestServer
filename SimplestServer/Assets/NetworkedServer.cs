@@ -17,12 +17,12 @@ public class NetworkedServer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        NetworkTransport.Init();
-        ConnectionConfig config = new ConnectionConfig();
-        reliableChannelID = config.AddChannel(QosType.Reliable);
-        unreliableChannelID = config.AddChannel(QosType.Unreliable);
-        HostTopology topology = new HostTopology(config, maxConnections);
-        hostID = NetworkTransport.AddHost(topology, socketPort, null);
+        NetworkTransport.Init(); //initializing the connection bridge
+        ConnectionConfig config = new ConnectionConfig(); //configuring the connection
+        reliableChannelID = config.AddChannel(QosType.Reliable); //quality of service. Reliable has msg garenteed to be delivered, order not garenteed.
+        unreliableChannelID = config.AddChannel(QosType.Unreliable); //nothing garenteed
+        HostTopology topology = new HostTopology(config, maxConnections); //last step in creating a connection, letting the servert know what configuration will be used(how many default connections, what special connections)
+        hostID = NetworkTransport.AddHost(topology, socketPort, null); //Adds host based on Networking.HostTopology. Returns the Host ID.
         
     }
 
@@ -36,10 +36,11 @@ public class NetworkedServer : MonoBehaviour
         byte[] recBuffer = new byte[1024];
         int bufferSize = 1024;
         int dataSize;
-        byte error = 0;
+        byte error = 0; //no rerrors yet.
 
-        NetworkEventType recNetworkEvent = NetworkTransport.Receive(out recHostID, out recConnectionID, out recChannelID, recBuffer, bufferSize, out dataSize, out error);
-
+        NetworkEventType recNetworkEvent = NetworkTransport.Receive(out recHostID, out recConnectionID, out recChannelID, recBuffer, bufferSize, out dataSize, out error);  //Part 3 out param -> The out keyword is what is being returned
+        //by the function.The reason we use out keyword parameters, moded with int values but not a referance to a class instance is that one is checking value by value, while another is comparing referances.
+      
         switch (recNetworkEvent)
         {
             case NetworkEventType.Nothing:
