@@ -1,0 +1,2 @@
+C:\Users\yaniv\Desktop\MultiplayerSystems\Server\SimplestServer\SimplestServer\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\yaniv\Desktop\MultiplayerSystems\Server\SimplestServer\SimplestServer\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
