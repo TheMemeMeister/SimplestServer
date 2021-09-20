@@ -8,11 +8,11 @@ using UnityEngine.UI;
 
 public class NetworkedServer : MonoBehaviour
 {
-    int maxConnections = 1000;
+    const int maxConnections = 1000;
     int reliableChannelID;
     int unreliableChannelID;
     int hostID;
-    int socketPort = 5491;
+    const int socketPort = 5491;
 
     // Start is called before the first frame update
     void Start()
@@ -49,6 +49,7 @@ public class NetworkedServer : MonoBehaviour
                 Debug.Log("Connection, " + recConnectionID);
                 break;
             case NetworkEventType.DataEvent:
+                //byte firstByte = recBuffer[0];
                 string msg = Encoding.Unicode.GetString(recBuffer, 0, dataSize);
                 ProcessRecievedMsg(msg, recConnectionID);
                 break;
