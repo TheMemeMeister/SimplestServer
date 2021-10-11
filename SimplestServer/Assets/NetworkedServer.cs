@@ -70,6 +70,31 @@ public class NetworkedServer : MonoBehaviour
     private void ProcessRecievedMsg(string msg, int id)
     {
         Debug.Log("msg recieved = " + msg + ".  connection id = " + id);
-    }
+        string[] csv = msg.Split(',');
+        int signfier = int.Parse(csv[0]);
 
+        if (signfier == ClientToServerSignifiers.CreateAccount)
+        {
+            Debug.Log("create account");
+        }
+        else if (signfier == ClientToServerSignifiers.LoginAccount)
+        {
+            Debug.Log("create login");
+        }
+    }
+    public static class ClientToServerSignifiers
+    {
+        public const int CreateAccount = 1;
+        public const int LoginAccount = 2;
+
+    }
+    public static class ServerToClientSignifiers
+    {
+        public const int LoginComplete = 1;
+        public const int LoginFailed = 2;
+
+        public const int AccountCreationComplete = 3;
+        public const int AccountCreationFailed = 4;
+
+    }
 }
