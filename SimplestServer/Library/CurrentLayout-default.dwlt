@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 8
-    y: 51
+    x: -72
+    y: 138
     width: 1904
-    height: 981
+    height: 997
   m_ShowMode: 4
   m_Title: Console
   m_RootView: {fileID: 5}
-  m_MinSize: {x: 875, y: 392}
+  m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -42,9 +42,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 477
-    height: 448
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+    height: 453
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -71,11 +71,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1904
-    height: 448
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+    height: 453
+  m_MinSize: {x: 401, y: 221}
+  m_MaxSize: {x: 8001, y: 4021}
   vertical: 0
-  controlID: 24
+  controlID: 42
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -120,8 +120,8 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1904
-    height: 981
-  m_MinSize: {x: 875, y: 392}
+    height: 997
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -148,9 +148,6 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LoadedToolbars:
-  - {fileID: 19}
-  m_MainToolbar: {fileID: 19}
   m_LastLoadedLayoutName: 
 --- !u!114 &7
 MonoBehaviour:
@@ -168,7 +165,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 961
+    y: 977
     width: 1904
     height: 20
   m_MinSize: {x: 0, y: 0}
@@ -192,11 +189,11 @@ MonoBehaviour:
     x: 0
     y: 30
     width: 1904
-    height: 931
-  m_MinSize: {x: 402, y: 342}
-  m_MaxSize: {x: 8002, y: 8042}
+    height: 947
+  m_MinSize: {x: 401, y: 321}
+  m_MaxSize: {x: 8001, y: 8021}
   vertical: 0
-  controlID: 22
+  controlID: 65
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -217,11 +214,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1904
-    height: 931
-  m_MinSize: {x: 402, y: 342}
-  m_MaxSize: {x: 8002, y: 8042}
+    height: 947
+  m_MinSize: {x: 401, y: 321}
+  m_MaxSize: {x: 8001, y: 8021}
   vertical: 1
-  controlID: 23
+  controlID: 66
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -240,7 +237,7 @@ MonoBehaviour:
     x: 477
     y: 0
     width: 1427
-    height: 448
+    height: 453
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 12}
@@ -265,11 +262,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 448
+    y: 453
     width: 1904
-    height: 483
-  m_MinSize: {x: 100, y: 121}
-  m_MaxSize: {x: 4000, y: 4021}
+    height: 494
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -297,10 +294,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 485
-    y: 81
+    x: 478
+    y: 19
     width: 1426
-    height: 427
+    height: 432
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -345,22 +342,22 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 1426
-      height: 406
-    m_Scale: {x: 0.37592593, y: 0.37592593}
-    m_Translation: {x: 713, y: 203}
+      height: 411
+    m_Scale: {x: 0.38055557, y: 0.38055557}
+    m_Translation: {x: 713, y: 205.50002}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1896.6503
+      x: -1873.5765
       y: -540
-      width: 3793.3005
+      width: 3747.153
       height: 1080
     m_MinimalGUI: 1
-  m_defaultScale: 0.37592593
-  m_LastWindowPixelSize: {x: 1426, y: 427}
+  m_defaultScale: 0.38055557
+  m_LastWindowPixelSize: {x: 1426, y: 432}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -386,17 +383,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 81
+    x: 0
+    y: 19
     width: 476
-    height: 427
+    height: 432
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 44fbffff
+      m_ExpandedIDs: 6ae9ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -556,10 +553,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 529
+    x: 0
+    y: 472
     width: 1904
-    height: 462
+    height: 473
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &16
 MonoBehaviour:
@@ -614,7 +611,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 683f0000
     m_LastClickedID: 16232
-    m_ExpandedIDs: 00000000683f000000ca9a3b
+    m_ExpandedIDs: 00000000bc5b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -642,7 +639,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000683f0000
+    m_ExpandedIDs: 00000000bc5b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -749,7 +746,7 @@ MonoBehaviour:
     oldSplitSize: 0
   m_Recording: 1
   m_ActiveNativePlatformSupportModuleName: 
-  m_SelectedModuleIndex: 0
+  m_SelectedModuleIndex: -1
   m_Modules:
   - id: 0
   - id: 1
@@ -777,6 +774,7 @@ MonoBehaviour:
         m_ProfilerWindow:
           id: 14
         m_Name: CPU Usage
+        m_LocalizedName: 
         m_IconName: Profiler.CPU
         m_ChartCounters:
         - m_Category: NoCategory
@@ -802,6 +800,8 @@ MonoBehaviour:
         m_PaneScroll: {x: 0, y: 0}
         m_ViewType: 1
         updateViewLive: 0
+        m_CurrentFrameIndex: -1
+        m_HierarchyOverruledThreadFromSelection: 0
         m_ProfilerViewFilteringOptions: 1
         m_FrameDataHierarchyView:
           m_Serialized: 1
@@ -847,7 +847,7 @@ MonoBehaviour:
               sortedAscending: 0
             m_VisibleColumns: 0000000001000000020000000300000004000000050000000600000007000000
             m_SortedColumns: 05000000
-          m_ThreadIndex: 0
+          m_ThreadIndexInThreadNames: 0
           m_DetailedViewType: 0
           m_DetailedViewSpliterState:
             ID: 0
@@ -1009,13 +1009,18 @@ MonoBehaviour:
                   sortedAscending: 0
                 m_VisibleColumns: 0000000001000000020000000300000004000000
                 m_SortedColumns: 03000000
+          m_FullThreadName: 
           m_ThreadName: Main Thread
+          <threadId>k__BackingField: 0
+          <threadIndex>k__BackingField: 0
+          m_GroupName: 
     00000001:
       type: {class: GPUProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
       data:
         m_ProfilerWindow:
           id: 14
         m_Name: GPU Usage
+        m_LocalizedName: 
         m_IconName: Profiler.GPU
         m_ChartCounters:
         - m_Category: NoCategory
@@ -1037,6 +1042,8 @@ MonoBehaviour:
         m_PaneScroll: {x: 0, y: 0}
         m_ViewType: 0
         updateViewLive: 0
+        m_CurrentFrameIndex: -1
+        m_HierarchyOverruledThreadFromSelection: 0
         m_ProfilerViewFilteringOptions: 1
         m_FrameDataHierarchyView:
           m_Serialized: 1
@@ -1074,7 +1081,7 @@ MonoBehaviour:
               sortedAscending: 0
             m_VisibleColumns: 00000000010000000200000003000000
             m_SortedColumns: 03000000
-          m_ThreadIndex: 0
+          m_ThreadIndexInThreadNames: 0
           m_DetailedViewType: 0
           m_DetailedViewSpliterState:
             ID: 0
@@ -1236,13 +1243,18 @@ MonoBehaviour:
                   sortedAscending: 0
                 m_VisibleColumns: 0000000001000000020000000300000004000000
                 m_SortedColumns: 03000000
+          m_FullThreadName: 
           m_ThreadName: Main Thread
+          <threadId>k__BackingField: 0
+          <threadIndex>k__BackingField: 0
+          m_GroupName: 
     00000002:
       type: {class: RenderingProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
       data:
         m_ProfilerWindow:
           id: 14
         m_Name: Rendering
+        m_LocalizedName: 
         m_IconName: Profiler.Rendering
         m_ChartCounters:
         - m_Category: Render
@@ -1262,6 +1274,7 @@ MonoBehaviour:
         m_ProfilerWindow:
           id: 14
         m_Name: Memory
+        m_LocalizedName: 
         m_IconName: Profiler.Memory
         m_ChartCounters:
         - m_Category: Memory
@@ -1311,6 +1324,7 @@ MonoBehaviour:
         m_ProfilerWindow:
           id: 14
         m_Name: Audio
+        m_LocalizedName: 
         m_IconName: Profiler.Audio
         m_ChartCounters:
         - m_Category: NoCategory
@@ -1333,6 +1347,7 @@ MonoBehaviour:
         m_ProfilerWindow:
           id: 14
         m_Name: Video
+        m_LocalizedName: 
         m_IconName: Profiler.Video
         m_ChartCounters:
         - m_Category: NoCategory
@@ -1352,6 +1367,7 @@ MonoBehaviour:
         m_ProfilerWindow:
           id: 14
         m_Name: Physics
+        m_LocalizedName: 
         m_IconName: Profiler.Physics
         m_ChartCounters:
         - m_Category: NoCategory
@@ -1377,6 +1393,7 @@ MonoBehaviour:
         m_ProfilerWindow:
           id: 14
         m_Name: Physics (2D)
+        m_LocalizedName: 
         m_IconName: Profiler.Physics2D
         m_ChartCounters:
         - m_Category: NoCategory
@@ -1406,6 +1423,7 @@ MonoBehaviour:
         m_ProfilerWindow:
           id: 14
         m_Name: Network Messages
+        m_LocalizedName: 
         m_IconName: Profiler.NetworkMessages
         m_ChartCounters:
         - m_Category: NoCategory
@@ -1431,6 +1449,7 @@ MonoBehaviour:
         m_ProfilerWindow:
           id: 14
         m_Name: Network Operations
+        m_LocalizedName: 
         m_IconName: Profiler.NetworkOperations
         m_ChartCounters:
         - m_Category: NoCategory
@@ -1499,6 +1518,7 @@ MonoBehaviour:
         m_ProfilerWindow:
           id: 14
         m_Name: UI
+        m_LocalizedName: 
         m_IconName: Profiler.UI
         m_ChartCounters:
         - m_Category: NoCategory
@@ -1514,6 +1534,7 @@ MonoBehaviour:
         m_ProfilerWindow:
           id: 14
         m_Name: UI Details
+        m_LocalizedName: 
         m_IconName: Profiler.UIDetails
         m_ChartCounters:
         - m_Category: NoCategory
@@ -1529,6 +1550,7 @@ MonoBehaviour:
         m_ProfilerWindow:
           id: 14
         m_Name: Global Illumination
+        m_LocalizedName: 
         m_IconName: Profiler.GlobalIllumination
         m_ChartCounters:
         - m_Category: NoCategory
@@ -1560,6 +1582,7 @@ MonoBehaviour:
         m_ProfilerWindow:
           id: 14
         m_Name: Virtual Texturing
+        m_LocalizedName: 
         m_IconName: Profiler.VirtualTexturing
         m_ChartCounters:
         - m_Category: Virtual Texturing
@@ -1578,11 +1601,14 @@ MonoBehaviour:
         m_ChartType: 1
         m_PaneScroll: {x: 0, y: 0}
         m_VTProfilerView:
-          m_ScrollAggregate: {x: 0, y: 0}
-          m_ScrollDemand: {x: 0, y: 0}
-          m_ScrollBias: {x: 0, y: 0}
+          id: 15
     0000000E:
       type: {class: ProfilerWindow/ProfilerWindowControllerProxy, ns: UnityEditor, asm: UnityEditor.CoreModule}
+    0000000F:
+      type: {class: VirtualTexturingProfilerView, ns: UnityEditor, asm: UnityEditor.CoreModule}
+      data:
+        m_SortAscending: 0
+        m_SortedColumn: -1
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1617,19 +1643,7 @@ MonoBehaviour:
   m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
+  m_InspectorMode: 0
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &19
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13963, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_DontSaveToLayout: 0

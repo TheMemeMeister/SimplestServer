@@ -14,6 +14,8 @@ public class NetworkedServer : MonoBehaviour
     int hostID;
     const int socketPort = 5491;
 
+    LinkedList<PlayerAccount> playerAccounts;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,9 @@ public class NetworkedServer : MonoBehaviour
         unreliableChannelID = config.AddChannel(QosType.Unreliable); //nothing garenteed
         HostTopology topology = new HostTopology(config, maxConnections); //last step in creating a connection, letting the servert know what configuration will be used(how many default connections, what special connections)
         hostID = NetworkTransport.AddHost(topology, socketPort, null); //Adds host based on Networking.HostTopology. Returns the Host ID.
+
+        playerAccounts = new LinkedList<PlayerAccount>();
+        //read in player accounts
         
     }
 
@@ -76,12 +81,56 @@ public class NetworkedServer : MonoBehaviour
         if (signfier == ClientToServerSignifiers.CreateAccount)
         {
             Debug.Log("create account");
+            ///check if player account name already exits
+            ///
+            string n = csv[1];
+            string p = csv[2];
+            bool nameIsInUse = false;
+            foreach (PlayerAccount pa in playerAccounts)
+            {
+                if(pa.name == n)
+                {
+                    nameIsInUse = true;
+                }
+            }
+            if (nameIsInUse)
+            {
+                SendMessageToClient(ServerToClientSignifiers.AccountCreationFailed + "", id);
+            }
+            else
+            {
+                PlayerAccount newPlayerAccount = new PlayerAccount(n, p);
+                playerAccounts.AddLast(newPlayerAccount);
+                SendMessageToClient(ServerToClientSignifiers.AccountCreationComplete + "", id);
+                ///save list to HD
+            }
+
+
+
         }
         else if (signfier == ClientToServerSignifiers.LoginAccount)
         {
             Debug.Log("create login");
+            ///check if player account name already exits,
+            ///sent to client success/failure
         }
     }
+    public class PlayerAccount
+    {
+        public string name, password;
+
+        public PlayerAccount(string Name, string Password)
+        {
+            name = Name;
+            password = Password;
+        }
+    }
+
+
+
+
+
+
     public static class ClientToServerSignifiers
     {
         public const int CreateAccount = 1;
